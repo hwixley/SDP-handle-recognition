@@ -1,24 +1,43 @@
 import os
 import numpy as np
+import pandas
 from sklearn.svm import SVC
 from sklearn.metrics import classification_report
-import cPickle
+from PIL import Image
+import matplotlib.pyplot as plt
+import pickle
+from sklearn.metrics import roc_curve, auc
 
-k = "linear"
-path = os.getcwd() + "/../dataset/"
+path1 = os.getcwd() + "/../../data/npy-data/"
+path2 = os.getcwd() + "/../dataset/"
 res = "360"
 
-trainX = np.load(path + "training/trainSamples"+res+".npy")
-trainY = np.load(path + "training/trainLabels.npy").astype("int")
-testX = np.load(path + "testing/testSamples"+res+".npy")
-testY = np.load(path + "testing/testLabels.npy").astype("int")
+trainX = np.load(path1 + "trainSamples-"+res+"-withColour.npy")
+trainY = np.load(path2 + "train/trainLabels.npy").astype("int")
+testX = np.load(path1 + "testSamples-"+res+"-withColour.npy")
+testY = np.load(path2 + "test/testLabels.npy").astype("int")
 
-svc = SVC(kernel=k)
-svc.fit(trainX, trainY)
+kernelTypes = ["linear", "poly", "rbf"]
 
-predY = svc.predict(testX)
+for k in kernelTypes:
+    svc = SVC(kernel=k)
+    svc.fit(trainX, trainY)
 
-print(k)
-print(classification_report(testY, predY))
+    predY = svc.predict(testX)
 
-cPickle.dump(svc, open(k+"-SVM-model.pkl", "wb"))
+    print(k + ": " + str(svc.score(testX, testY)))
+    print(classification_report(testY, predY))
+
+    pickle.dump(svc, open(os.getcwd() + "/../../model-pickle-files/" + k + "-SVM-model.pkl", "wb"))
+
+    false_positive_rate, recall, thresholds = roc_curve(testY, predY)
+    roc_auc = auc(false_positive_rate, recall)
+    plt.title('Receiver Operating Characteristic')
+    plt.plot(false_positive_rate, recall, 'b', label='AUC = %0.2f' % roc_auc)
+    plt.legend(loc='lower right')
+    plt.plot([0, 1], [0, 1], 'r--')
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.0])
+    plt.ylabel('Recall')
+    plt.xlabel('Fall-out')
+    plt.show()

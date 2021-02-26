@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6729c713-3b98-4a66-bc4d-00bfbb140d58" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/harrys-models/.ipynb_checkpoints/svm-model-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/harrys-models/.ipynb_checkpoints/svm-model-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/harrys-models/QA/logR-test-accuracies.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/harrys-models/QA/svm-test-accuracies.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/harrys-models/logRegression-model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/harrys-models/logRegression-model.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/harrys-models/logRegression-model.py" beforeDir="false" afterPath="$PROJECT_DIR$/harrys-models/logRegression-model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/harrys-models/parse-dataset-labels.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/harrys-models/parse-dataset-labels.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/harrys-models/svm-model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/harrys-models/svm-model.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/harrys-models/svm-model.py" beforeDir="false" afterPath="$PROJECT_DIR$/harrys-models/svm-model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/split-dataset.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/split-dataset.ipynb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1onqK1gBLkQcd0ILVT8Y7x8SvL3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/harrys-models/svm-model.py" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.svm-model">
+    <configuration name="imageai-model.py" type="PythonConfigurationType" factoryName="Python">
+      <module name="Models" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/Packages/miniconda3/envs/pycharm/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/imageai-model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="logRegression-model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/Packages/miniconda3/envs/pycharm/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/harrys-models" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/harrys-models/logRegression-model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="svm-model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/Packages/miniconda3/envs/pycharm/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/harrys-models" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/harrys-models/svm-model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.imageai-model.py" />
+      <item itemvalue="Python.logRegression-model" />
+      <item itemvalue="Python.svm-model" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.svm-model" />
+        <item itemvalue="Python.logRegression-model" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6729c713-3b98-4a66-bc4d-00bfbb140d58" name="Default Changelist" comment="" />
+      <created>1613932634950</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613932634950</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
