@@ -30,14 +30,7 @@ for k in kernelTypes:
 
     pickle.dump(svc, open(os.getcwd() + "/../../model-pickle-files/" + k + "-SVM-model.pkl", "wb"))
 
-    false_positive_rate, recall, thresholds = roc_curve(testY, predY)
-    roc_auc = auc(false_positive_rate, recall)
-    plt.title('Receiver Operating Characteristic')
-    plt.plot(false_positive_rate, recall, 'b', label='AUC = %0.2f' % roc_auc)
-    plt.legend(loc='lower right')
-    plt.plot([0, 1], [0, 1], 'r--')
-    plt.xlim([0.0, 1.0])
-    plt.ylim([0.0, 1.0])
-    plt.ylabel('Recall')
-    plt.xlabel('Fall-out')
-    plt.show()
+    plot_roc_curve(svc, testX, testY)
+
+plt.title("Receiver Operating Characteristic")
+plt.show()
