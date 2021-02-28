@@ -14,23 +14,22 @@ res = "360"
 
 trainX = np.load(path1 + "trainSamples-"+res+"-withColour.npy")
 trainY = np.load(path2 + "train/trainLabels.npy").astype("int")
-testX = np.load(path1 + "testSamples-"+res+"-withColour.npy")
-testY = np.load(path2 + "test/testLabels.npy").astype("int")
+#testX = np.load(path1 + "testSamples-"+res+"-withColour.npy")
+#testY = np.load(path2 + "test/testLabels.npy").astype("int")
 
 kernelTypes = ["linear", "poly", "rbf"]
 
 for k in kernelTypes:
-    svc = SVC(kernel=k)
+    svc = SVC(kernel=k,probability=True)
     svc.fit(trainX, trainY)
 
-    predY = svc.predict(testX)
+    #predY = svc.predict(testX)
 
-    print(k + ": " + str(svc.score(testX, testY)))
-    print(classification_report(testY, predY))
+    pickle.dump(svc, open(os.getcwd() + "/../../model-pickle-files/" + k + "-SVM-model-"+res+".pkl", "wb"))
 
-    pickle.dump(svc, open(os.getcwd() + "/../../model-pickle-files/" + k + "-SVM-model.pkl", "wb"))
+    #print(k + ": " + str(svc.score(testX, testY)))
+    #print(classification_report(testY, predY))
+    #plot_roc_curve(svc, testX, testY)
 
-    plot_roc_curve(svc, testX, testY)
-
-plt.title("Receiver Operating Characteristic")
-plt.show()
+#plt.title("Receiver Operating Characteristic")
+#plt.show()

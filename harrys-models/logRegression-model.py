@@ -5,7 +5,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report
 from PIL import Image
 import pickle
-from sklearn.metrics import roc_curve, auc, plot_roc_curve
+from sklearn.metrics import roc_curve, auc, plot_roc_curve, roc_auc_score
 import matplotlib.pyplot as plt
 
 path1 = os.getcwd() + "/../../data/npy-data/"
@@ -23,7 +23,14 @@ for res in resOptions:
 
     print(classification_report(testY, predY))
 
-    #plot_roc_curve(logR, testX, testY)
-    plt.title("Receiver Operating Characteristic")
+    fpr, tpr, thresh = roc_curve(testY, predY)
+    auc = roc_auc_score(testY, predY)
+    plt.plot(fpr, tpr, label="Logistic Regression "+res+"p, AUC=" + str(auc))
+
+
+
+plt.legend(loc=0)
+#plot_roc_curve(logR, testX, testY)
+plt.title("Receiver Operating Characteristic")
 
 plt.show()
